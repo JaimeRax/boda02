@@ -1,57 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Beau+Rivage&display=swap" rel="stylesheet">
-    
-    <title>Nuestra Boda</title>
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="fondo">
-        <div class="encabezado">
-            <img src="img/fondo01.png" alt="rosas" class="fondo1">
-            
-        </div>
-        <h2>Después de una hermosa historia<br>
-            y de muchas aventuras compartidas.
-        </h2>
-        <div class="encabezado">
-            <img src="img/fondo02.png" alt="rosas" class="fondo1">
-        </div>
-        <div class="encabezado">
-            <img src="img/fondo04.png" alt="rosas" class="fondo1">
-        </div>
-        <div class="encabezado">
-            <img src="img/227.png" alt="rosas" class="fondo1">
-            <a class="centrado mi-boton borde box ubi" href="https://goo.gl/maps/7nnp7J7wnzj5sbRu9" target="_blank">
-                <span>
-                    ...Ver Ubicación...
-                </span>
-            </a>
-        </div>
-        <div class="encabezado">
-            <img src="img/fondo15.png" alt="rosas" class="fondo1">
-            <a class="centrado mi-boton borde box confirmar"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfpMuYDSOpmqDMlQ3O5qnvdWBZ2fu-6oxM4MR3F5qWu4QXc7A/viewform?usp=sf_link" target="_blank">
+    <audio controls preload autoplay hidden>
+        <source src="./Music/y2mate.com - Axel  Te Voy A Amar.mp3" type="audio/mp3">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+    <div class="contenedor">
+        <img src="./img/UltimoFinal2.png" class="primero">
+        <a class="centrado mi-boton borde box" href="https://goo.gl/maps/7nnp7J7wnzj5sbRu9"
+            style="margin-top: -370px; margin-left: 5px;">
             <span>
-                ....Confirmar....
+                ...Ver Ubicación...
             </span>
         </a>
-        <a class="centrado mi-boton borde box agregar"
-            href="https://open.spotify.com/playlist/4isNFYOWcMlhPhwMnVpbBB?si=c30054e38c964341&pt=2bf95bbca0925ee6797bc18f12906c1d" target="_blank">
+        <a class="centrado mi-boton borde box"
+            href="https://open.spotify.com/playlist/4isNFYOWcMlhPhwMnVpbBB?si=c30054e38c964341&pt=2bf95bbca0925ee6797bc18f12906c1d"
+            style="margin-top: 620px; margin-left: 1px;">
             <span>
                 Agregar a la Lista
             </span>
         </a>
+        <a class="centrado mi-boton borde box"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfpMuYDSOpmqDMlQ3O5qnvdWBZ2fu-6oxM4MR3F5qWu4QXc7A/viewform?usp=sf_link"
+            style="margin-top: 160px; margin-left: 1px;">
+            <span>
+                ....Confirmar....
+            </span>
+        </a>
+        <a class="centrado mi-boton borde box"
+            href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=Nm5vbmUxbXA5cDJoNTBycmpib2dsOWZnbm8gZ3VpbGxlbjQ0NzNAbQ&tmsrc=guillen4473%40gmail.com"
+            style="margin-top: -580px; margin-left: 5px; height: 50px;">
+            <span>
+                Guardar Fecha
+            </span>
+        </a>
+        <a class="centrado mi-boton borde box" href="./Regalo.html"
+            style="margin-top: 440px; margin-left: 0px; height: 50px;">
+            <span>
+                ...Leer mas...
+            </span>
+        </a>
+
+        <div class="contenido centrado" style="margin-top: 1500px;">
+            <div class="charts">
+                <div class="chart">
+                    <div class="circle center-abs"></div>
+                    <svg class="center-abs" width="100" height="100">
+                        <circle class="outer" cx="50" cy="50" r="45" />
+                    </svg>
+                    <span class="text center-abs" id="days"></span>
+                    <h3>Días</h3>
+                </div>
+                <div class="chart">
+                    <div class="circle center-abs"></div>
+                    <svg class="center-abs" width="100" height="100">
+                        <circle class="outer" cx="50" cy="50" r="45" />
+                    </svg>
+                    <span class="text center-abs" id="hours"></span>
+                    <h3>Horas</h3>
+                </div>
+                <div class="chart">
+                    <div class="circle center-abs"></div>
+                    <svg class="center-abs" width="100" height="100">
+                        <circle class="outer" cx="50" cy="50" r="45" />
+                    </svg>
+                    <span class="text center-abs" id="minutes"></span>
+                    <h3>Minutos</h3>
+                </div>
+                <div class="chart">
+                    <div class="circle center-abs"></div>
+                    <svg class="center-abs" width="100" height="100">
+                        <circle class="outer" cx="50" cy="50" r="45" />
+                    </svg>
+                    <span class="text center-abs" id="seconds"></span>
+                    <h3>Segundos</h3>
+                </div>
+            </div>
         </div>
-        <div class="encabezado">
-            <img src="img/fondo04.png" alt="rosas" class="fondo1">
-        </div>
-    </div>
-    
+
 </body>
+<script src="/index.js"></script>
+
 </html>
