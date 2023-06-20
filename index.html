@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <script>
+        function playAudio() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
@@ -12,10 +18,16 @@
 </head>
 
 <body>
-    <audio autoplay>
+   <button onclick="playAudio()">Reproducir</button>
+
+    <audio id="myAudio">
         <source src="Music/y2mate.com - Axel  Te Voy A Amar.mp3" type="audio/mpeg">
         Tu navegador no soporta la reproducción de audio.
-      </audio>
+    </audio>
+
+    
+
+
     <div class="contenedor">
         <img src="./img/UltimoFinal2.png" class="primero">
         <a class="centrado mi-boton borde box" href="https://goo.gl/maps/7nnp7J7wnzj5sbRu9"
